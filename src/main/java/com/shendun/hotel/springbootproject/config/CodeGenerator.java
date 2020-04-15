@@ -64,7 +64,7 @@ public class CodeGenerator {
         // 包配置
         PackageConfig pc = new PackageConfig();
         pc.setParent("com.shendun.hotel.springbootproject");
-       pc.setModuleName("generation"); //自定义包名
+      // pc.setModuleName("generation"); //自定义包名
         pc.setMapper("mapper");//dao
         pc.setService("service");//servcie
         pc.setController("controller");//controller
@@ -207,7 +207,7 @@ public class CodeGenerator {
         // 写于父类中的公共字段
         //strategy.setSuperEntityColumns("id");
         //表名
-        strategy.setInclude("room_info");
+        strategy.setInclude("person_info");
         strategy.setControllerMappingHyphenStyle(true);
         //根据你的表名来建对应的类名，如果你的表名没有什么下划线，比如test，那么你就可以取消这一步
         //strategy.setTablePrefix("person_");
